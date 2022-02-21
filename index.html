@@ -17,7 +17,7 @@
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrap">
 
 		<header class="header">
 			<div class="row">
@@ -30,17 +30,18 @@
 							</li>
 							<li class="navigation__button"><a class='button-link'><i class="fa-solid fa-rss"></i></a></li>
 						</ul>
+						<button class="open-menu"><i class="fas fa-bars"></i></button>
 						<ul class="navigation__menu">
-							<li class="menu__list-item"><a class='item__link' href="#"><span class="caption-mark">Home</span></a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Portfolio</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">About</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Service</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Archive</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Blog</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Other pages</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Contact us</a></li>
-							<li class="menu__list-item"><i class="fa-solid fa-magnifying-glass"></i></li>
+							<li class="menu__list-item"><span class="caption-mark">Home</span></li>
+							<li class="menu__list-item"><a class='item__link' href="portfolio.html">Portfolio</a></li>
+							<li class="menu__list-item"><a class='item__link' href="services.html">Service</a></li>
+							<li class="menu__list-item"><a class='item__link' href="about.html">About</a></li>
+							<li class="menu__list-item"><a class='item__link' href="archive.html">Archive</a></li>
+							<li class="menu__list-item"><a class='item__link' href="ourblog.html">Blog</a></li>
+							<li class="menu__list-item"><a class='item__link' href="contactus.html">Contact us</a></li>
+							<li class="menu__list-item"><a class='item__link' href="blog_item.html">*Blog_item</a></li>
 						</ul>
+						<p class="search"><i class="search__icon fa-solid fa-magnifying-glass"></i></p>
 					</nav>
 				</div>
 			</div>
@@ -51,7 +52,7 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="img/wood.png">
+						<img class='carousel-img' src="img/wood.png">
 						<div class="container">
 							<div class="carousel-caption">
 								<h1 class="carousel-title">We <span class="caption-mark">Deliver</span> nothing Short of
@@ -84,23 +85,24 @@
 		</header>
 
 		<main class="main">
-
-			<section class="service">
+			<section class="remark border-line">
 				<div class="row">
 					<div class="col-12">
 						<div class="intro">
-							<h2 class="intro__title">We are a Small Team Doing Big Things!</h2>
+							<h2 class="intro__title">Do you Like What You See?</h2>
 							<p class="intro__content">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut
 								lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est
 								pretium.
 							</p>
 						</div>
-						<hr>
 					</div>
 				</div>
+			</section>
+
+			<section class="service">
 				<div class="row service__items">
-					<div class="col-4">
+					<div class="col-md-4 col-sm-6">
 						<div class="service__box">
 							<img class="service__img" src="img/gear.png" alt=''>
 							<h3 class="service__title">Service</h3>
@@ -109,7 +111,7 @@
 							<a class="service__link" href='#'>Find Out More</a>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-md-4 col-sm-6">
 						<div class="service__box">
 							<img class="service__img" src="img/people.png" alt=''>
 							<h3 class="service__title">Service</h3>
@@ -118,7 +120,7 @@
 							<a class="service__link" href='#'>Find Out More</a>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-md-4 col-sm-12">
 						<div class="service__box">
 							<img class="service__img" src="img/star.png" alt=''>
 							<h3 class="service__title">Service</h3>
@@ -130,42 +132,52 @@
 				</div>
 			</section>
 			<section class="work">
-				<div class="row">
-					<div class="col-12">
-						<div class="intro">
-							<h2 class="intro__title">We are a Small Team Doing Big Things!</h2>
-							<p class="intro__content">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut
-								lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est
-								pretium.
-							</p>
-						</div>
+				<div class="work__wrapper">
+					<div class="row">
+						<div class="col-12">
+							<div class="intro pb-5">
+								<h2 class="intro__title">We are a Small Team Doing Big Things!</h2>
+								<p class="intro__content">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut
+									lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum
+									est
+									pretium.
+								</p>
+							</div>
 
-						<div class="work__items">
-							<div class="work__item">
-								<img class='work__desktop' src="img/desktop.png">
-								<img class="work__desktop-hover item1" src="img/itemspace.png" alt="">
+							<div class="work__items home-page">
+								<div class="work__item">
+									<img class='work__desktop' src="img/desktop.png">
+									<img class="work__desktop-hover item1" src="img/itemspace.png" alt="">
+								</div>
+								<div class="work__item">
+									<p class="work__item-title">arrows</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								</div>
+								<div class="work__item">
+									<img class='work__desktop' src="img/desktop.png">
+									<img class="work__desktop-hover" src="img/arrows.png" alt="">
+								</div>
+								<div class="work__item">
+									<p class="work__item-title">Circle Icons</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								</div>
+								<div class="work__item">
+									<img class='work__desktop' src="img/desktop.png">
+									<img class="work__desktop-hover" src="img/wood.png" alt="">
+								</div>
+
+
+								<div class="work__item">
+									<p class="work__item-title">portfolio theme</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								</div>
 							</div>
-							<div class="work__item">
-								<img class='work__desktop' src="img/desktop.png">
-								<img class="work__desktop-hover" src="img/arrows.png" alt="">
-							</div>
-							<div class="work__item">
-								<img class='work__desktop' src="img/desktop.png">
-								<img class="work__desktop-hover" src="img/page.png" alt="">
-							</div>
-							<div class="work__item">
-								<p class="work__item-title">Circle Icons</p>
-							</div>
-							<div class="work__item">
-								<p class="work__item-title">arrows</p>
-							</div>
-							<div class="work__item">
-								<p class="work__item-title">portfolio theme</p>
-							</div>
+
 						</div>
 					</div>
 				</div>
+
 
 			</section>
 
@@ -174,7 +186,6 @@
 
 
 
-			<hr>
 			<section class="remark">
 				<div class="row">
 					<div class="col-12">
@@ -185,7 +196,7 @@
 								lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est
 								pretium.
 							</p>
-							<a class="intro__link">Purchase</a>
+							<a class="intro__link" href="">Purchase</a>
 						</div>
 					</div>
 				</div>
@@ -199,7 +210,7 @@
 		<footer class="footer">
 			<div class="wrapper">
 				<div class="row">
-					<div class=" col-5">
+					<div class=" col-xl-5 col-md-6 col-sm-12 ">
 						<div class="footer__wrapper-box">
 							<nav class="footer__navigation">
 								<ul class="navigation__buttons">
@@ -221,7 +232,7 @@
 								quae quaerat praesentium repellendus.</p>
 						</div>
 					</div>
-					<div class=" col-2">
+					<div class=" col-xl-2 col-md-3 col-sm-6 col-6">
 						<div class="footer__wrapper-box">
 							<h6 class="footer__title">Contact info</h6>
 							<p class="footer__content">222 Ave C South Saskatoon, Saskatchewan Canada S7K 2N5
@@ -230,7 +241,7 @@
 							</p>
 						</div>
 					</div>
-					<div class=" col-2">
+					<div class=" col-xl-2 col-md-3 col-sm-6 col-6">
 						<div class="footer__wrapper-box">
 							<h6 class="footer__title">Contact info</h6>
 							<ul class="footer__list">
@@ -243,7 +254,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class=" col-3">
+					<div class=" col-xl-3 col-md-12">
 						<div class="footer__wrapper-box">
 							<h6 class="footer__title">Newsletter</h6>
 							<p class="footer__content">

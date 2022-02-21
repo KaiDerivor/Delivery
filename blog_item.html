@@ -20,30 +20,27 @@
 	<div class="wrapper">
 
 		<header class="header">
-			<div class="row">
-				<div class="col-12">
-					<nav class="navigation all">
-						<ul class="navigation__buttons">
-							<li class="navigation__button">Delivery</li>
-							<li class="navigation__button"><a class='button-link'><i class="fa-brands fa-twitter"></i></a></li>
-							<li class="navigation__button"><a class='button-link'><i class="fa-brands fa-facebook-f"></i></a>
-							</li>
-							<li class="navigation__button"><a class='button-link'><i class="fa-solid fa-rss"></i></a></li>
-						</ul>
-						<ul class="navigation__menu">
-							<li class="menu__list-item"><a class='item__link' href="#">Home</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Portfolio</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">About</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Service</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Archive</a></li>
-							<li class="menu__list-item"><span class="caption-mark">Blog</span></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Other pages</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Contact us</a></li>
-							<li class="menu__list-item"><i class="fa-solid fa-magnifying-glass"></i></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+			<nav class="navigation all">
+				<ul class="navigation__buttons">
+					<li class="navigation__button">Delivery</li>
+					<li class="navigation__button"><a class='button-link'><i class="fa-brands fa-twitter"></i></a></li>
+					<li class="navigation__button"><a class='button-link'><i class="fa-brands fa-facebook-f"></i></a>
+					</li>
+					<li class="navigation__button"><a class='button-link'><i class="fa-solid fa-rss"></i></a></li>
+				</ul>
+				<button class="open-menu"><i class="fas fa-bars"></i></button>
+				<ul class="navigation__menu">
+					<li class="menu__list-item"><a class='item__link' href="index.html">Home</a>
+					</li>
+					<li class="menu__list-item"><a class='item__link' href="portfolio.html">Portfolio</a></li>
+					<li class="menu__list-item"><a class='item__link' href="about.html">About</a></li>
+					<li class="menu__list-item"><a class='item__link' href="services.html">Service</a></li>
+					<li class="menu__list-item"><a class='item__link' href="archive.html">Archive</a></li>
+					<li class="menu__list-item"><a class='item__link' href="ourblog.html">Blog</a></li>
+					<li class="menu__list-item"><a class='item__link' href="contactus.html">Contact us</a></li>
+				</ul>
+				<p class="search"><i class="search__icon fa-solid fa-magnifying-glass"></i></p>
+			</nav>
 			<section class="main-title">
 				<div class="row">
 					<div class="col-12">
@@ -58,8 +55,8 @@
 		<main class="main">
 			<section class="blog">
 				<div class="row">
-					<div class="col-8">
-						<div class="archive__main">
+					<div class="col-md-8">
+						<div class="blog__main">
 							<div class="box-content">
 								<div id="myCarousel" class="carousel slide" data-ride="carousel">
 									<ol class="carousel-indicators">
@@ -67,7 +64,7 @@
 										<li data-target="#myCarousel" data-slide-to="1"></li>
 									</ol>
 									<div class="carousel-inner">
-										<div class="carousel-item active">
+										<div class="carousel-item blog active">
 											<img class="blog-img" src="img/content/image1.png">
 											<div class="container">
 												<div class="carousel-caption">
@@ -75,7 +72,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="carousel-item">
+										<div class="carousel-item blog">
 											<img class="blog-img" src="img/content/image2.jpg">
 
 											<div class="container">
@@ -87,7 +84,7 @@
 									</div>
 
 								</div>
-								<h3 class="blog__tag">7 Strategies to Market Your Business Online</h3>
+								<h3 class="blog__title">7 Strategies to Market Your Business Online</h3>
 								<div class="tag-list">
 									<a href="" class="tag-list__item"><i class="far fa-calendar-alt"></i>July 3, 2022</a>
 									<a href="" class="tag-list__item"><i class="fas fa-user"></i>Michael Reimer</a>
@@ -114,36 +111,124 @@
 
 							</div>
 
+							<section class="social">
+								<div class="wrapper">
+									<div class="repost__item"><a class="link-twitter" href='#' alt=''><i
+												class="fa-brands fa-twitter"></i>
+											Tweet</a>
+										<p class="info">128<img class="container" src='img/mark.png'></p>
+									</div>
+									<div class="repost__item"><a class="link-facebook" href='#' alt=''><i
+												class="fa-brands fa-facebook-f"></i> Like</a>
+										<p class="info">259<img class="container" src='img/mark.png'></p>
+									</div>
+									<div class="repost__item"><a class="link-pinterest" href='#' alt=''><i
+												class="fa-brands fa-pinterest-p"></i> Pin</a>
+										<p class="info">32<img class="container" src='img/mark.png'></p>
+									</div>
+								</div>
+							</section>
+
+							<section class="comment-list">
+								<h3 class="title">Comments </h3>
+								<div class="wrapper">
+									<div class="comment">
+										<div class="comment__icon-user">
+											<img class="icon-user" src="img/user1.png">
+										</div>
+										<div class="comment__content bottom-border">
+											<p class="user-data">July 11, 2022 / <a class="comment__reply" href='#'>Reply</a></p>
+											<h4 class="user-name">Matt Adams</h4>
+											<p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Integer nec odio.
+												Praesent libero. Sed
+												cursus ante dap ibus diam.</p>
+										</div>
+									</div>
+									<div class="comment">
+										<div class="comment__icon-user">
+											<img class="icon-user" src="img/user2.png">
+										</div>
+										<div class="comment__content bottom-border content-reply">
+											<p class="user-data">July 11, 2022 / <a class="comment__reply" href='#'>Reply</a></p>
+											<h4 class="user-name">Matt Adams</h4>
+											<p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Integer nec odio.
+												Praesent libero. Sed
+												cursus ante dap ibus diam.</p>
+										</div>
+									</div>
+									<div class="comment">
+										<div class="comment__icon-user">
+											<img class="icon-user" src="img/user2.png">
+										</div>
+										<div class="comment__content">
+											<p class="user-data">July 11, 2022 / <a class="comment__reply" href='#'>Reply</a></p>
+											<h4 class="user-name">Matt Adams</h4>
+											<p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Integer nec odio.
+												Praesent libero. Sed
+												cursus ante dap ibus diam.</p>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="form-comment">
+								<h3 class="form-comment__title">Leave a comment</h3>
+								<form class="send-comment" action="#" mentod="">
+									<div class="upper-data">
+										<div class="upper-data__item"><input class='input-data' type="text" name="" id=""
+												required></div>
+										<div class="upper-data__item">
+											<h4 class="title-data">Name <span class="necessery">*</span></h4>
+											<span class="descroption">Your full name please.</span>
+										</div>
+										<div class="upper-data__item"><input class='input-data' type="email" name="" id=""
+												required></div>
+										<div class="upper-data__item">
+											<h4 class="title-data">Email address <span class="necessery">*</span></h4>
+											<span class="descroption">Used for gravatar.</span>
+										</div>
+										<div class="upper-data__item"><input class='input-data' type="url" name="" id=""></div>
+										<div class="upper-data__item">
+											<h4 class="title-data">Website </h4>
+											<span class="descroption">Link back if you want.</span>
+										</div>
+									</div>
+									<textarea class='text-comment' placeholder="//comment" name="" id=""></textarea>
+									<button class="send-data" type="submit">Send message</button>
+								</form>
+							</section>
 
 						</div>
 
 					</div>
-					<div class="col-4">
-						<div class='archive__side'>
+					<div class="col-md-4">
+						<div class='blog__side'>
 
 							<h3 class="title">Popular Posts</h3>
 							<p class="content">
-								<a class="archive__link">New Premium WordPress Theme - Blaco </a>
-								<a class="archive__link">Top Web Trends of 2022 </a>
-								<a class="archive__link">Video Post Example </a>
-								<a class="archive__link">How Important is Twitter </a>
-								<a class="archive__link">Home Builders New Planning Solution </a></p>
+								<a class="content__link" href="#">New Premium WordPress Theme - Blaco </a>
+								<a class="content__link" href="#">Top Web Trends of 2022 </a>
+								<a class="content__link" href="#">Video Post Example </a>
+								<a class="content__link" href="#">How Important is Twitter </a>
+								<a class="content__link" href="#">Home Builders New Planning Solution </a></p>
 							<h3 class="title">Blog categories</h3>
 							<ul class="link-list">
-								<li class="link-list__item">News (4)</li>
-								<li class="link-list__item">Website Releases (23)</li>
-								<li class="link-list__item">Events (7)</li>
-								<li class="link-list__item">Marketing (5)</li>
-								<li class="link-list__item">Web Development (2)</li>
+								<li class="link-list__item"><a href='#'>News (4)</a></li>
+								<li class="link-list__item"><a href='#'>Website Releases (23)</a></li>
+								<li class="link-list__item"><a href='#'>Events (7)</a></li>
+								<li class="link-list__item"><a href='#'>Marketing (5)</a></li>
+								<li class="link-list__item"><a href='#'>Web Deveopment (2)</a>l</li>
 							</ul>
 
 							<h3 class="title">Blog categories</h3>
 							<ul class="link-list">
-								<li class="link-list__item">March (4)</li>
-								<li class="link-list__item">April (5)</li>
-								<li class="link-list__item">May (3)</li>
-								<li class="link-list__item">June (4)</li>
-								<li class="link-list__item"> July (2) </li>
+								<li class="link-list__item"><a href='#'>March (4)</a></li>
+								<li class="link-list__item"><a href='#'>April (5)</a></li>
+								<li class="link-list__item"><a href='#'>May (3)</a></li>
+								<li class="link-list__item"><a href='#'>June (4)</a></li>
+								<li class="link-list__item"> <a href='#'>July (2)</a> </li>
 							</ul>
 
 
@@ -151,97 +236,18 @@
 					</div>
 				</div>
 			</section>
-			<section class="social">
-				<div class="wrapper">
-					<div class="repost__item"><a class="link-twitter" href='#' alt=''><i class="fa-brands fa-twitter"></i>
-							Tweet</a>
-						<p class="info">128<img class="container" src='img/mark.png'></p>
-					</div>
-					<div class="repost__item"><a class="link-facebook" href='#' alt=''><i
-								class="fa-brands fa-facebook-f"></i> Like</a>
-						<p class="info">259<img class="container" src='img/mark.png'></p>
-					</div>
-					<div class="repost__item"><a class="link-pinterest" href='#' alt=''><i
-								class="fa-brands fa-pinterest-p"></i> Pin</a>
-						<p class="info">32<img class="container" src='img/mark.png'></p>
-					</div>
-				</div>
-			</section>
 
 
-			<section class="comment-list">
-				<h3 class="title">Comments </h3>
-				<div class="wrapper">
-					<div class="comment">
-						<div class="comment__icon-user">
-							<img class="icon-user" src="img/user1.png">
-						</div>
-						<div class="comment__content bottom-border">
-							<p class="user-data">July 11, 2022 / <a class="comment__reply" href='#'>Reply</a></p>
-							<h4 class="user-name">Matt Adams</h4>
-							<p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-								Praesent libero. Sed
-								cursus ante dap ibus diam.</p>
-						</div>
-					</div>
-					<div class="comment">
-						<div class="comment__icon-user">
-							<img class="icon-user" src="img/user2.png">
-						</div>
-						<div class="comment__content bottom-border content-reply">
-							<p class="user-data">July 11, 2022 / <a class="comment__reply" href='#'>Reply</a></p>
-							<h4 class="user-name">Matt Adams</h4>
-							<p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-								Praesent libero. Sed
-								cursus ante dap ibus diam.</p>
-						</div>
-					</div>
-					<div class="comment">
-						<div class="comment__icon-user">
-							<img class="icon-user" src="img/user2.png">
-						</div>
-						<div class="comment__content">
-							<p class="user-data">July 11, 2022 / <a class="comment__reply" href='#'>Reply</a></p>
-							<h4 class="user-name">Matt Adams</h4>
-							<p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-								Praesent libero. Sed
-								cursus ante dap ibus diam.</p>
-						</div>
-					</div>
-				</div>
-			</section>
 
-			<section class="form-comment">
-				<h3 class="form-comment__title">Leave a comment</h3>
-				<form class="send-comment" action="#" mentod="">
-					<div class="upper-data">
-						<div class="upper-data__item"><input class='input-data' type="text" name="" id="" required></div>
-						<div class="upper-data__item">
-							<h4 class="title-data">Name <span class="necessery">*</span></h4>
-							<span class="descroption">Your full name please.</span>
-						</div>
-						<div class="upper-data__item"><input class='input-data' type="email" name="" id="" required></div>
-						<div class="upper-data__item">
-							<h4 class="title-data">Email address <span class="necessery">*</span></h4>
-							<span class="descroption">Used for gravatar.</span>
-						</div>
-						<div class="upper-data__item"><input class='input-data' type="url" name="" id=""></div>
-						<div class="upper-data__item">
-							<h4 class="title-data">Website </h4>
-							<span class="descroption">Link back if you want.</span>
-						</div>
-					</div>
-					<textarea class='text-comment' placeholder="//comment" name="" id=""></textarea>
-					<button class="send-data" type="submit">Send message</button>
-				</form>
-			</section>
+
+
 		</main>
 
 
 		<footer class="footer">
 			<div class="wrapper">
 				<div class="row">
-					<div class=" col-5">
+					<div class=" col-xl-5 col-md-6 col-sm-12 ">
 						<div class="footer__wrapper-box">
 							<nav class="footer__navigation">
 								<ul class="navigation__buttons">
@@ -263,7 +269,7 @@
 								quae quaerat praesentium repellendus.</p>
 						</div>
 					</div>
-					<div class=" col-2">
+					<div class=" col-xl-2 col-md-3 col-sm-6 col-6">
 						<div class="footer__wrapper-box">
 							<h6 class="footer__title">Contact info</h6>
 							<p class="footer__content">222 Ave C South Saskatoon, Saskatchewan Canada S7K 2N5
@@ -272,7 +278,7 @@
 							</p>
 						</div>
 					</div>
-					<div class=" col-2">
+					<div class=" col-xl-2 col-md-3 col-sm-6 col-6">
 						<div class="footer__wrapper-box">
 							<h6 class="footer__title">Contact info</h6>
 							<ul class="footer__list">
@@ -285,7 +291,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class=" col-3">
+					<div class=" col-xl-3 col-md-12">
 						<div class="footer__wrapper-box">
 							<h6 class="footer__title">Newsletter</h6>
 							<p class="footer__content">

@@ -20,30 +20,28 @@
 	<div class="wrapper">
 
 		<header class="header">
-			<div class="row">
-				<div class="col-12">
-					<nav class="navigation all">
-						<ul class="navigation__buttons">
-							<li class="navigation__button">Delivery</li>
-							<li class="navigation__button"><a class='button-link'><i class="fa-brands fa-twitter"></i></a></li>
-							<li class="navigation__button"><a class='button-link'><i class="fa-brands fa-facebook-f"></i></a>
-							</li>
-							<li class="navigation__button"><a class='button-link'><i class="fa-solid fa-rss"></i></a></li>
-						</ul>
-						<ul class="navigation__menu">
-							<li class="menu__list-item"><a class='item__link' href="#">Home</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Portfolio</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">About</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Service</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Archive</a></li>
-							<li class="menu__list-item"><span class="caption-mark">Blog</span></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Other pages</a></li>
-							<li class="menu__list-item"><a class='item__link' href="#">Contact us</a></li>
-							<li class="menu__list-item"><i class="fa-solid fa-magnifying-glass"></i></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+			<nav class="navigation all">
+				<ul class="navigation__buttons">
+					<li class="navigation__button">Delivery</li>
+					<li class="navigation__button"><a class='button-link'><i class="fa-brands fa-twitter"></i></a></li>
+					<li class="navigation__button"><a class='button-link'><i class="fa-brands fa-facebook-f"></i></a>
+					</li>
+					<li class="navigation__button"><a class='button-link'><i class="fa-solid fa-rss"></i></a></li>
+				</ul>
+				<button class="open-menu"><i class="fas fa-bars"></i></button>
+				<ul class="navigation__menu">
+					<li class="menu__list-item"><a class='item__link' href="index.html">Home</a>
+					</li>
+					<li class="menu__list-item"><a class='item__link' href="portfolio.html">Portfolio</a></li>
+					<li class="menu__list-item"><a class='item__link' href="about.html">About</a></li>
+					<li class="menu__list-item"><a class='item__link' href="services.html">Service</a></li>
+					<li class="menu__list-item"><a class='item__link' href="archive.html">Archive</a></li>
+					<li class="menu__list-item"><span class="caption-mark">Blog</span></li>
+					<li class="menu__list-item"><a class='item__link' href="contactus.html">Contact us</a></li>
+					<li class="menu__list-item"><a class='item__link' href="blog_item.html">*Blog_item</a></li>
+				</ul>
+				<p class="search"><i class="search__icon fa-solid fa-magnifying-glass"></i></p>
+			</nav>
 			<section class="main-title">
 				<div class="row">
 					<div class="col-12">
@@ -58,8 +56,8 @@
 		<main class="main">
 			<section class="blog">
 				<div class="row">
-					<div class="col-8">
-						<div class="archive__main">
+					<div class="col-md-8">
+						<div class="blog__main">
 							<div class="box-content">
 								<div id="myCarousel" class="carousel slide" data-ride="carousel">
 									<ol class="carousel-indicators">
@@ -67,7 +65,7 @@
 										<li data-target="#myCarousel" data-slide-to="1"></li>
 									</ol>
 									<div class="carousel-inner">
-										<div class="carousel-item active">
+										<div class="carousel-item blog active">
 											<img class="blog-img" src="img/content/image1.png">
 											<div class="container">
 												<div class="carousel-caption">
@@ -75,7 +73,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="carousel-item">
+										<div class="carousel-item blog">
 											<img class="blog-img" src="img/content/image2.jpg">
 
 											<div class="container">
@@ -87,7 +85,7 @@
 									</div>
 
 								</div>
-								<h3 class="blog__tag">7 Strategies to Market Your Business Online</h3>
+								<h3 class="blog__title">7 Strategies to Market Your Business Online</h3>
 								<div class="tag-list">
 									<a href="" class="tag-list__item"><i class="far fa-calendar-alt"></i>July 3, 2022</a>
 									<a href="" class="tag-list__item"><i class="fas fa-user"></i>Michael Reimer</a>
@@ -97,6 +95,7 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nisi eget lectus
 									iaculis
 									congue. Nullam eleifend congue turpis, vel scelerisque massa fermentum ac ... </p>
+									<p class="open-post"><a class="open-post__link" href="blog_item.html">Find More</a></p>
 							</div>
 
 							<div class="box-content">
@@ -105,7 +104,7 @@
 								</div>
 
 
-								<h3 class="blog__tag">Basic Post with Featured Image</h3>
+								<h3 class="blog__title">Basic Post with Featured Image</h3>
 								<div class="tag-list">
 									<a href="" class="tag-list__item"><i class="far fa-calendar-alt"></i>July 3, 2022</a>
 									<a href="" class="tag-list__item"><i class="fas fa-user"></i>Michael Reimer</a>
@@ -115,11 +114,12 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nisi eget lectus
 									iaculis
 									congue. Nullam eleifend congue turpis, vel scelerisque massa fermentum ac ... </p>
+								<p class="open-post"><a class="open-post__link" href="blog_item.html">Find More</a></p>
 							</div>
 							<div class="box-content">
 
 
-								<h3 class="blog__tag">Post Example With No Featured Image</h3>
+								<h3 class="blog__title">Post Example With No Featured Image</h3>
 								<div class="tag-list">
 									<a href="" class="tag-list__item"><i class="far fa-calendar-alt"></i>July 3, 2022</a>
 									<a href="" class="tag-list__item"><i class="fas fa-user"></i>Michael Reimer</a>
@@ -129,6 +129,8 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nisi eget lectus
 									iaculis
 									congue. Nullam eleifend congue turpis, vel scelerisque massa fermentum ac ... </p>
+								<p class="open-post"><a class="open-post__link" href="blog_item.html">Find More</a></p>
+
 							</div>
 							<div class="box-content">
 								<div class="blog-title">
@@ -139,7 +141,7 @@
 								</div>
 
 
-								<h3 class="blog__tag">Video Post Example</h3>
+								<h3 class="blog__title">Video Post Example</h3>
 								<div class="tag-list">
 									<a href="" class="tag-list__item"><i class="far fa-calendar-alt"></i>July 3, 2022</a>
 									<a href="" class="tag-list__item"><i class="fas fa-user"></i>Michael Reimer</a>
@@ -149,46 +151,48 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nisi eget lectus
 									iaculis
 									congue. Nullam eleifend congue turpis, vel scelerisque massa fermentum ac ... </p>
+								<p class="open-post"><a class="open-post__link" href="blog_item.html">Find More</a></p>
+
 							</div>
 						</div>
 						<section class="pagination">
 							<div class="wrapper">
 								<ul class="pagination__list">
-									<li class="list-item current"><a class='pagination__link'href=''>1</a></li>
-									<li class="list-item"><a class='pagination__link'href=''>2</a></li>
-									<li class="list-item"><a class='pagination__link'href=''>3</a></li>
-									<li class="list-item"><a class='pagination__link'href=''>4</a></li>
-									<li class="list-item"><a class='pagination__link'href=''>5</a></li>
+									<li class="list-item current"><a class='pagination__link' href=''>1</a></li>
+									<li class="list-item"><a class='pagination__link' href=''>2</a></li>
+									<li class="list-item"><a class='pagination__link' href=''>3</a></li>
+									<li class="list-item"><a class='pagination__link' href=''>4</a></li>
+									<li class="list-item"><a class='pagination__link' href=''>5</a></li>
 								</ul>
 							</div>
 						</section>
 					</div>
-					<div class="col-4">
-						<div class='archive__side'>
+					<div class="col-md-4">
+						<div class='blog__side'>
 
-							<h3 class="title">Popular Posts</h3>
+							<h3 class="blog__title">Popular Posts</h3>
 							<p class="content">
-								<a class="archive__link">New Premium WordPress Theme - Blaco </a>
-								<a class="archive__link">Top Web Trends of 2022 </a>
-								<a class="archive__link">Video Post Example </a>
-								<a class="archive__link">How Important is Twitter </a>
-								<a class="archive__link">Home Builders New Planning Solution </a></p>
+								<a class="content__link" href="#">New Premium WordPress Theme - Blaco </a>
+								<a class="content__link" href="#">Top Web Trends of 2022 </a>
+								<a class="content__link" href="#">Video Post Example </a>
+								<a class="content__link" href="#">How Important is Twitter </a>
+								<a class="content__link" href="#">Home Builders New Planning Solution </a></p>
 							<h3 class="title">Blog categories</h3>
 							<ul class="link-list">
-								<li class="link-list__item">News (4)</li>
-								<li class="link-list__item">Website Releases (23)</li>
-								<li class="link-list__item">Events (7)</li>
-								<li class="link-list__item">Marketing (5)</li>
-								<li class="link-list__item">Web Development (2)</li>
+								<li class="link-list__item"> <a href="#">News (4)</a></li>
+								<li class="link-list__item"> <a href="#">Website Releases (23)</a></li>
+								<li class="link-list__item"> <a href="#">Events (7)</a></li>
+								<li class="link-list__item"> <a href="#">Marketing (5)</a></li>
+								<li class="link-list__item"> <a href="#">Web Development (2)</a></li>
 							</ul>
 
 							<h3 class="title">Blog categories</h3>
 							<ul class="link-list">
-								<li class="link-list__item">March (4)</li>
-								<li class="link-list__item">April (5)</li>
-								<li class="link-list__item">May (3)</li>
-								<li class="link-list__item">June (4)</li>
-								<li class="link-list__item"> July (2) </li>
+								<li class="link-list__item"><a href="#">March (4)</a></li>
+								<li class="link-list__item"><a href="#">April (5)</a></li>
+								<li class="link-list__item"><a href="#">May (3)</a></li>
+								<li class="link-list__item"><a href="#">June (4)</a></li>
+								<li class="link-list__item"> <a href="#">July (2) </a></li>
 							</ul>
 
 
@@ -197,14 +201,14 @@
 				</div>
 			</section>
 
-			
+
 		</main>
 
 
 		<footer class="footer">
 			<div class="wrapper">
 				<div class="row">
-					<div class=" col-5">
+					<div class=" col-xl-5 col-md-6 col-sm-12 ">
 						<div class="footer__wrapper-box">
 							<nav class="footer__navigation">
 								<ul class="navigation__buttons">
@@ -226,7 +230,7 @@
 								quae quaerat praesentium repellendus.</p>
 						</div>
 					</div>
-					<div class=" col-2">
+					<div class=" col-xl-2 col-md-3 col-sm-6 col-6">
 						<div class="footer__wrapper-box">
 							<h6 class="footer__title">Contact info</h6>
 							<p class="footer__content">222 Ave C South Saskatoon, Saskatchewan Canada S7K 2N5
@@ -235,7 +239,7 @@
 							</p>
 						</div>
 					</div>
-					<div class=" col-2">
+					<div class=" col-xl-2 col-md-3 col-sm-6 col-6">
 						<div class="footer__wrapper-box">
 							<h6 class="footer__title">Contact info</h6>
 							<ul class="footer__list">
@@ -248,7 +252,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class=" col-3">
+					<div class=" col-xl-3 col-md-12">
 						<div class="footer__wrapper-box">
 							<h6 class="footer__title">Newsletter</h6>
 							<p class="footer__content">
